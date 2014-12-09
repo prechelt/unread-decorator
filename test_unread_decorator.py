@@ -168,7 +168,7 @@ def test_refuses_nonfilelike_objects():
     with pytest.raises(AttributeError):
         add_unread(io.TextIOWrapper)  # class, not object
 
-def test_example_from_documentation():
+def test_unread_example_from_documentation():
     f = io.StringIO("one\ntwo\nthree")
     f = add_unread(f)  # decorate
     data = f.readline()  # 'one\n'

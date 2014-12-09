@@ -34,7 +34,7 @@ setup(
     # basic information:
     name=package_name,
     version=find_version('unread_decorator.py'),
-    description="push data back into an input stream or file-like object",
+    description="unread() for streams, unnext() for iterators",
     long_description=get_file_contents("README.rst"),
 
     # The project URL:
@@ -62,7 +62,9 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
     ],
-    keywords='undo, I/O',
+    keywords='undo, I/O, iterator',
+
+    py_modules=['unread_decorator'],
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages.
